@@ -14,6 +14,9 @@
 #ifdef ENABLE_VULKAN
 #include "video_core/renderer_vulkan/renderer_vulkan.h"
 #endif
+#ifdef ENABLE_METAL
+#include "video_core/renderer_metal/renderer_metal.h"
+#endif
 #include "video_core/video_core.h"
 
 namespace VideoCore {
