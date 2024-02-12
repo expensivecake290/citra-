@@ -1,1 +1,0 @@
-#include "video_core/renderer_metal/mtl_common.h"

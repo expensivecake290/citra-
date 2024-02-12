@@ -483,3 +483,5 @@ if(UNIX)
                 DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man6")
     endif()
 endif()
+
+if(Citra)

@@ -402,6 +402,10 @@ if (ENABLE_VULKAN)
         target_include_directories(vma SYSTEM INTERFACE ./vma/include)
     endif()
 
+    # metal_headers
+    add_subdirectory(metal_cpp)
+    
+
     # vulkan-headers
     add_library(vulkan-headers INTERFACE)
     if(USE_SYSTEM_VULKAN_HEADERS)

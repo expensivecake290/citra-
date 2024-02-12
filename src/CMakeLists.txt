@@ -168,6 +168,9 @@ endif()
 if(ENABLE_VULKAN)
     add_compile_definitions(ENABLE_VULKAN)
 endif()
+if(ENABLE_METAL)
+  add_compile_definitions(ENABLE_METAL)
+endif()
 
 add_subdirectory(common)
 add_subdirectory(core)
@@ -200,3 +203,7 @@ endif()
 if (ENABLE_WEB_SERVICE)
     add_subdirectory(web_service)
 endif()
+
+ # Create executable and link target
+add_executable(${project-name} ${${project}-src})
+target_link_libraries(${project-name} METAL_CPP)
